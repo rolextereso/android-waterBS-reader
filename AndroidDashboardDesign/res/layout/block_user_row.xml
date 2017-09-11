@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="0dp"
+	    android:id="@+id/settingrow">
+
+	    <ImageView
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/user_count"
+	        android:padding="10dp"
+	    	android:id="@+id/sicon"/>
+	  
+			  <LinearLayout
+			      android:layout_width="fill_parent"
+			      android:layout_height="78dp"
+			      android:gravity="center_vertical|left"
+			      android:orientation="vertical"
+			      android:padding="10dp" >
+			  
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:singleLine="true"
+			            android:textSize="19sp"
+			            android:textStyle="bold"
+			            android:id="@+id/blockUser"
+			            android:text="Account Setting"/>
+			         
+			        <TextView
+			            android:id="@+id/blockusertype"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:text="Administrator "
+			            android:textColor="#a8a8a6"
+			            android:textSize="14sp" />
+			         <TextView
+			            android:id="@+id/blockuserstat"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:text="[Active] "
+			            android:textColor="#a8a8a6"
+			            android:textSize="11sp" />
+	
+			  </LinearLayout>    
+			
+	</LinearLayout>

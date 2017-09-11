@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:id="@+id/setting"
+    >
+
+
+       
+   <include layout="@layout/actionbar_layout"/>
+  	<TextView
+            android:id="@+id/blockno_result_found"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="No User Found!!!"  />
+	   <ListView
+	        android:id="@+id/blockuserlist"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:cacheColorHint="#00000000" >
+	    </ListView>
+
+    
+</LinearLayout>

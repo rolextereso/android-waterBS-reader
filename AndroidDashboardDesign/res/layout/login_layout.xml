@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--
+        Include Action Bar  -->
+    	<include layout="@layout/actionbar_layout"/>
+    
+<ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+    <LinearLayout
+          android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="20dip"
+         >
+
+        <!-- Include Fragmented dashboard -->
+        <!-- Email Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#372c24"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:id="@+id/username" />
+        <!-- Password Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#372c24" 
+            android:textSize="17sp"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:password="true"
+            android:singleLine="true"
+            android:id="@+id/pass" />
+        
+        <!-- Login button -->
+         <CheckBox
+	        android:id="@+id/hidepass"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Hide password"
+	        android:checked="true"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Login"
+            />
+        
+        <!-- Link to Registration Screen -->
+		 <TextView android:id="@+id/link_to_registers" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="40dip"
+		  		android:layout_marginBottom="40dip"
+		  		android:text="New User? Register here"
+		  		android:gravity="center"
+		  		android:textSize="17dip"
+		  		android:textColor="#0b84aa"/>
+       
+    </LinearLayout>
+    <!-- Include Footer
+
+    <include
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer_layout" /> -->
+	</ScrollView>
+</LinearLayout>

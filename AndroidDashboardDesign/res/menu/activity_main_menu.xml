@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Search Widget -->
+    <!--<item android:id="@+id/print"
+          android:icon="@drawable/icon_print"
+          android:title="Water Consumption Report"
+          android:showAsAction="always"
+          />
+	     <item android:id="@+id/deleteReading"
+	          android:title="Delete Reading"
+	          android:showAsAction="collapseActionView"
+	          />-->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/action_search"
+          android:title="Search"
+          android:showAsAction="ifRoom"
+          android:actionViewClass="android.widget.SearchView"/>
+    
+   
+</menu>

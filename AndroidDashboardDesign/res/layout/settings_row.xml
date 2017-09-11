@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="0dp"
+	    android:id="@+id/settingrow">
+
+	    <ImageView
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/setting_default"
+	        android:padding="10dp"
+	    	android:id="@+id/sicon"/>
+	  
+			  <LinearLayout
+			      android:layout_width="fill_parent"
+			      android:layout_height="78dp"
+			      android:gravity="center_vertical|left"
+			      android:orientation="vertical"
+			      android:padding="10dp" >
+			  
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:singleLine="true"
+			            android:textSize="19sp"
+			            android:textStyle="bold"
+			            android:id="@+id/settingname"
+			            android:text="Username"/>
+			         
+			        <TextView
+			            android:id="@+id/settingdescription"
+			            android:layout_width="match_parent"
+			            android:layout_height="40dp"
+			            android:ellipsize="end"
+			            android:maxLines="2"
+			            android:text="Able you to edit your account&apos;s information "
+			            android:textColor="#a8a8a6"
+			            android:textSize="14sp" />
+	
+			  </LinearLayout>    
+			
+	</LinearLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+
+  	    <LinearLayout
+          android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:background="#dddddd"
+         >
+		  <ImageView
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/user_count"
+	        android:padding="8dp"
+	        android:layout_gravity="center_horizontal"/>
+      
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Rolly Tereso Jr."
+            android:textColor="#372c24"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/specific_user" />
+        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Administrator"
+            android:textColor="#372c24"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:id="@+id/specificu_user_type" />
+         
+         
+
+        
+        <!-- Link to Registration Screen -->
+
+       
+    </LinearLayout>
+  <ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+    <LinearLayout
+          android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="30dip"
+         >
+
+        <!-- Include Fragmented dashboard -->
+        <!-- Email Label -->
+
+		<CheckBox
+		    android:id="@+id/blockUsercheckbox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Block User"
+		    android:textSize="15dp"
+		    android:textStyle="bold" />
+		
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit User Password:"
+            android:textColor="#372c24"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:id="@+id/userpasswordedit"
+            android:textSize="20sp"/>
+     
+         
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Save"
+            android:onClick="saveblock" />
+      
+        <!-- Link to Registration Screen -->
+
+       
+    </LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

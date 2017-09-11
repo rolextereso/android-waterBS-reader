@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ActionBarCompat">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_background2</item>
+    </style>
+       
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff29549f</item>
+        <item name="android:background">@null</item>
+    </style>    
+    
+   <style name="FooterBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#dedede</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+		<item name="android:actionBarStyle">@style/ActionBar.Solid.Mytheme</item>
+    </style>  
+    <style name="NoTitleBar" parent="android:Theme.Light.NoTitleBar" /> 
+    <style name="ActionBar.Solid.Mytheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/actionbarstyle</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:titleTextStyle">@style/TextColor.Mytheme</item>
+        <item name="android:backgroundSplit">@drawable/bottomactionbarstyle</item>
+    </style> 
+    
+    <style name="TextColor.Mytheme" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+	    
+    </style>  
+</resources>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!--         Include Action Bar -->
+
+    <include layout="@layout/actionbarlogs_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/logContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:textColor="#060606" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

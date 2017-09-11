@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+    android:background="#f8f9fe">
+        <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#258dcf"
+        android:textSize="15sp"
+		android:textColor="#fafbfc"
+		android:text="Press empty customer table to drop all rows"
+		android:layout_gravity="center"
+		android:padding="5dp"
+
+        
+        />
+	   <LinearLayout
+          android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:background="#dddddd">
+				    
+			    	
+			     <Button android:text="Empty Customer Table"
+				         android:id="@+id/emptytable" 
+				         android:textSize="18dp"
+				         android:layout_marginTop="10dp" 
+				         android:layout_alignParentRight="true" 
+				         android:layout_height="wrap_content" 
+				         android:layout_width="wrap_content" 
+				         android:layout_gravity="center"
+				         android:onClick="emptycustomertable"
+				         >
+			      </Button>
+		</LinearLayout>
+		<!-- <ScrollView
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:background="#E3CCFE">
+	    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="78dp"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/noofrows"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="No of rows imported: 300"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/strokestyle"
+                android:padding="9dp"
+                android:textColor="#FCFAFA" />
+
+            <TextView
+                android:id="@+id/noofrowsdesc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Tells you of how many rows successfully imported "
+                android:textColor="#a8a8a6"
+                android:textSize="14sp"
+                android:background="#FCFAFA"
+                android:paddingLeft="9dp"
+                android:layout_marginBottom="7dp" />
+
+            <TextView
+                android:id="@+id/tofwaterconsumption"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Total Water Consump.: 300"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/strokestyle"
+                android:padding="9dp"
+                android:textColor="#FCFAFA"/>
+
+            <TextView
+                android:id="@+id/noofrowsdesc"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_weight="0.13"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="The actual total of the water consumption of the newly imported data"
+                android:textColor="#a8a8a6"
+                android:textSize="14sp"
+                android:background="#FCFAFA"
+                android:paddingLeft="9dp" />
+        </LinearLayout>
+
+	</ScrollView>-->
+	<ListView
+	        android:id="@+id/emptydbs"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:cacheColorHint="#00000000" >
+	    </ListView>
+</LinearLayout>

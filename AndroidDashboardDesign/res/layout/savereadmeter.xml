@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+
+  	    <LinearLayout
+          android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:paddingTop="7dip"
+		  android:background="#dddddd"
+         >
+		  <ImageView
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/corporate"
+	        android:padding="5dp"
+	        android:layout_gravity="center_horizontal"/>
+      
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Rolly Tereso Jr."
+            android:textColor="#372c24"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/customer_name" />
+        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Meter Number: 1039-2993"
+            android:textColor="#372c24"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:id="@+id/customer_meter_num" />
+         
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Residential"
+            android:textColor="#372c24"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:id="@+id/customer_connection_type" />
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#d78f50"
+             android:orientation="horizontal"
+             android:padding="4sp" >
+            		
+            		 <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:singleLine="true"
+			            android:textSize="15sp"
+			            android:text="Prev. Reading: "
+			           
+			              />
+            		   <TextView
+			            android:id="@+id/PrevReadingValue"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:ellipsize="end"
+			            android:textStyle="bold"
+			            android:textSize="25sp"
+			         
+			                      			
+			             />
+			      
+			    </LinearLayout>
+    	
+
+        
+        <!-- Link to Registration Screen -->
+
+       
+    </LinearLayout>
+  <ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+    <LinearLayout
+          android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="20dip"
+         >
+
+        <!-- Include Fragmented dashboard -->
+        <!-- Email Label -->
+
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Reading Date: July 1, 2014"
+            android:textColor="#372c24"
+            android:textSize="16sp"
+            android:paddingBottom="3dp"
+            android:id="@+id/reading_date" />
+		
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Consumption:"
+            android:textColor="#372c24"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="0dip"
+            android:singleLine="true"
+            android:id="@+id/waterconsumptionread"
+            android:inputType="number" 
+            android:textSize="40sp"/>
+     
+         
+
+        <Button
+            android:id="@+id/btnreadsave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Save"
+            android:onClick="save" />
+        <Button
+            android:id="@+id/btngotoprint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Proceed to Read Meter to Print"
+            android:onClick="ProceedRead" />
+        <LinearLayout 
+            android:id="@+id/systemdateinvalid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             
+             <ImageView
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/wbscalendar"
+	        android:padding="0dp"
+	        android:layout_gravity="center_horizontal"/>
+            
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Reading date is invalid: Please check your date"
+            android:textSize="20sp"
+            android:textColor="#8a2919"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"/>
+        </LinearLayout>
+       
+
+       
+    </LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

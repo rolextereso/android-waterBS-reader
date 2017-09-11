@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="androidhive.dashboard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+	
+
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+   
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+   <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    
+    <application
+        android:icon="@drawable/iconlauncher"
+        android:label="WBS Reader"
+        android:theme="@style/AppTheme">
+        <activity
+            android:label="WBS Reader"
+            android:name="com.androidhive.dashboard.Login" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="WBS Reader"
+            android:name="com.navigation.drawer.activity.BaseActivity" />
+		<activity
+                  android:name="com.androidhive.dashboard.FileChooser"
+            	  android:label="Choose File">
+                <category android:name="android.intent.category.DEFAULT" /> 
+        </activity>
+        <activity
+                  android:name="com.androidhive.dashboard.FileChooserExport"
+            	  android:label="Choose File">
+                <category android:name="android.intent.category.DEFAULT" /> 
+        </activity>
+        
+		 <!-- Home/dashboard -->
+        <activity android:name="com.androidhive.dashboard.AndroidDashboardDesignActivity"
+            	  android:label="WBS Reader-Dashboard"
+            	  ></activity>
+         
+        <!-- Unread meter -->
+        <activity android:name="com.androidhive.dashboard.UnreadMeterActivity"
+            	  android:label="Unread Meter"
+            	  android:parentActivityName="com.androidhive.dashboard.AndroidDashboardDesignActivity" ></activity>
+		  <!-- Save water consumption -->
+        <activity android:name="com.androidhive.dashboard.SaveReading"
+            	  android:label="Save Water Consumption"
+            	   android:screenOrientation="portrait"
+            	  android:parentActivityName="com.androidhive.dashboard.UnreadMeterActivity" ></activity>
+		 
+        <!-- Read Meter Activity -->
+        <activity android:name="com.androidhive.dashboard.ReadMeterActivity"
+                  android:label="Read Meter"
+                  android:parentActivityName="com.androidhive.dashboard.UnreadMeterActivity"
+                  android:uiOptions="splitActionBarWhenNarrow" >
+            
+              <meta-data android:name="android.support.UI_OPTIONS"
+           			android:value="splitActionBarWhenNarrow"
+                />
+        </activity>
+        
+         <!-- DeleteReading Activity -->
+        <activity android:name="com.androidhive.dashboard.DeleteReading"
+                  android:label="Delete Reading"
+                  android:parentActivityName="com.androidhive.dashboard.ReadMeterActivity"
+                 >
+        </activity>
+		
+		<activity android:name="com.androidhive.dashboard.PrintReport"
+                  android:label="Water Consumption Report"
+                  android:parentActivityName="com.androidhive.dashboard.ReadMeterActivity" ></activity>
+        
+        <!-- Empty Customer Table Activity -->
+        <activity android:name="com.androidhive.dashboard.EmptyCustomerActivity"
+             android:label="Empty Customer Table"
+             android:parentActivityName="com.androidhive.dashboard.AndroidDashboardDesignActivity" ></activity>
+
+        <!-- Settings Activity -->
+        <activity android:name="com.androidhive.dashboard.Settings"
+            	  android:label="Settings"
+            	  android:parentActivityName="com.androidhive.dashboard.AndroidDashboardDesignActivity" ></activity>
+		
+		<activity android:name="com.androidhive.dashboard.AccountSetting"
+            	  android:label="Account Setting"
+            	  android:parentActivityName="com.androidhive.dashboard.Settings" ></activity>
+		<activity android:name="com.androidhive.dashboard.FormulaSetting"
+            	  android:label="Formula Setting"
+            	  android:parentActivityName="com.androidhive.dashboard.Settings" ></activity>
+		<activity android:name="com.androidhive.dashboard.SelectPrinter"
+            	  android:label="Printer's Name"
+            	  android:parentActivityName="com.androidhive.dashboard.Settings" ></activity>
+		<activity android:name="com.androidhive.dashboard.ActionLogs"
+            	  android:label="Action Logs"
+            	  android:parentActivityName="com.androidhive.dashboard.Settings" ></activity>
+		<activity android:name="com.androidhive.dashboard.SpecificActionLog"
+            	  android:label="Action Logs"
+            	  android:parentActivityName="com.androidhive.dashboard.ActionLogs" ></activity>
+		<activity android:name="com.androidhive.dashboard.BlockUser"
+            	  android:label="Block Users Account"
+            	  android:parentActivityName="com.androidhive.dashboard.Settings" ></activity>
+		<activity android:name="com.androidhive.dashboard.AddUser"
+            	  android:label="Add Users Account"
+            	  android:parentActivityName="com.androidhive.dashboard.Settings" ></activity>
+		<activity android:name="com.androidhive.dashboard.BlockSpecificUser"
+            	  android:label="Block Specific User"
+            	  android:parentActivityName="com.androidhive.dashboard.BlockUser" ></activity>
+        <!-- Events Activity -->
+        <activity android:name="com.androidhive.dashboard.ImportDB"
+            	  android:label="Import DB"
+            	  android:screenOrientation="portrait"
+            	  android:parentActivityName="com.androidhive.dashboard.AndroidDashboardDesignActivity" ></activity>
+        
+        <!-- Photos Activity -->
+        <activity android:name="com.androidhive.dashboard.ExportDB" 
+            	  android:label="Export DB"
+            	  android:screenOrientation="portrait"
+            	  android:parentActivityName="com.androidhive.dashboard.AndroidDashboardDesignActivity"></activity>
+        <!-- Event for new user -->
+        <!-- Photos Activity -->
+        <activity android:name="com.androidhive.dashboard.Register" 
+            	  android:label="Register New User"
+            	  android:parentActivityName="com.androidhive.dashboard.Login"
+            	  ></activity>
+    </application>
+
+</manifest>

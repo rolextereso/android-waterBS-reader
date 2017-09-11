@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/ActionBarCompat" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:paddingLeft="15dip"
+        android:scaleType="center"
+        android:src="@drawable/logo"
+        android:id="@+id/systemicon" />
+    
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center_vertical|left"
+         android:orientation="vertical"
+       >
+
+        <TextView
+            android:id="@+id/usernames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/usertypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="11sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
